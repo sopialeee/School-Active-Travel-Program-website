@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 25rem;
+}
+.grid{
+    display: grid;
+}
+
+.grid.add-gutters{
+    grid-column-gap: 8rem;
+}
+
+@media(min-width: 20rem){
+    .grid.one-column{
+        grid-template-columns: 1fr;
+    }
+
+    h1{
+        margin-top: 0rem;
+        padding-top: 10rem;
+    }
+    body{
+        min-width: 42rem;
+    }
+}
+
+
+@media (min-width: 48rem){
+    .grid.five-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .grid.two-column{
+        grid-template-columns: 1.5fr 0.5fr;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,56 @@
+/*Code learned from: https://www.youtube.com/watch?v=L2o0Fp2gQEo*/
+
+.cards{
+    width: 75%;
+    margin: 3.125rem auto;
+    display: grid;
+    grid-gap: 1.875rem;
+}
+
+
+.card{
+    background-color: rgb(193, 220, 224);
+}
+
+.card_white{
+    
+    background-color: rgb(255, 255, 255);
+    border: 0.125rem solid black;
+}
+
+.content{
+    text-align: left;
+    padding: 0.625rem;
+}
+
+.content h2{
+    margin-top: 0.313rem;
+    letter-spacing: 0.094rem;
+    color: black;
+}
+.content p{
+    margin-top: 0.625rem;
+    color: black;
+    font-size: 1.125rem;
+    max-width: 60rem;
+}
+    
+
+.button{
+    margin-top: 0.625rem;
+    text-decoration: underline;
+    display: inline-block;
+    background-color: rgb(44, 90, 97);
+    color: rgb(255, 255, 255);
+    padding: 0.313rem 1.125rem;
+    border-radius: 0.4rem;
+    letter-spacing: 0.094rem;
+    font-size: 1.125rem;
+}
+
+.button:hover{
+    background-color: rgb(83, 95, 97);
+    transition-duration: 0.2s;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+}

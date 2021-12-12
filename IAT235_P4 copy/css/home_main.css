@@ -1,0 +1,133 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Roboto, Verdana, sans-serif;
+	margin: 0rem;
+	font-size: 1.25rem;
+}
+
+
+h1 {
+	font-size: 4.5rem;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	color: rgb(255, 255, 255);
+	padding-left: 6rem;
+	text-align: left;
+	max-width: 60rem;
+}
+
+
+h2 {
+	font-size: 1.5rem;
+	color: rgb(255, 255, 255);
+	font-weight: lighter;
+	padding-left: 6rem;
+	padding-right: 5rem;
+	padding-bottom: 2.5rem;
+	max-width: 60rem;
+}
+
+
+p, ol, ul {
+	max-width: 80rem;
+	padding-left: 6rem;
+	padding-right: 5rem;
+	color: rgb(255, 255, 255);
+}
+
+
+a {
+	
+	color: rgb(41, 41, 170);
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+
+a:hover, a:focus {
+	color: rgb(24, 24, 105); 
+}
+
+
+.nav-main-item {
+	display: inline-block;
+	color: white;
+	background-color: rgb(44, 90, 97) ;
+	font-size: 1rem;
+	padding: 1rem 1rem;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	text-align: center;
+}
+
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color:rgb(83, 95, 97);
+}
+
+
+.cards{
+    width: 100%;
+    margin: 1.25rem auto;
+    display: grid;
+    grid-gap: 0rem;
+}
+
+
+.card{
+    background-color: rgb(83, 95, 97);
+}
+
+img{
+    width: 100%;
+}
+
+.content{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.button{
+    margin-top: 0.625rem;
+    text-decoration: underline;
+    display: inline-block;
+    background-color: rgb(44, 90, 97);
+    color: rgb(255, 255, 255);
+    padding: 0.313rem 1.125rem;
+    border-radius: 0.4rem;
+    letter-spacing: 0.094rem;
+    font-size: 1.125rem;
+}
+
+.button:hover{
+    background-color: rgb(83, 95, 97);
+    transition-duration: 0.2s;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+}
+
+/* The information for gotopbutton from: https://www.youtube.com/watch?v=Vef9bxTilCU*/
+.gotopbtn{
+	position: fixed;
+	width:  2.813rem;
+	height: 2.813rem;
+	color: white;
+	background-color: #93A8AB;;
+	bottom: 2.5rem;
+	right: 3.125rem;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 0.625rem;
+  }
+  
+  footer {
+	margin-top: 3.125rem;
+	background-color: #2C5A61;
+	padding-top: 6.25rem;
+  }
+  

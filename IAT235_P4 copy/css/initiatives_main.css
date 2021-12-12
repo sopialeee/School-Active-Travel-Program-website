@@ -1,0 +1,161 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Roboto, Verdana, sans-serif;
+	margin: 0rem;
+	font-size: 1.25rem;
+}
+
+
+
+h1 {
+	font-size: 4.5rem;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	color: rgb(255, 255, 255);
+	background-color: #93A8AB;
+	padding-left: 6rem;
+	padding-right: 1rem;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	text-align: left;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	padding-bottom: .25rem;
+	font-style: italic;
+	line-height: 2rem;
+}
+
+
+p, ol, ul {
+	max-width: 60rem;
+	color: rgb(0, 0, 0);
+	line-height: 1.9rem;
+	font-size: 1.125rem;
+}
+
+a {
+	color: rgb(41, 41, 170);
+	transition-property: color;
+	transition-duration: 0.5s;
+	text-decoration: underline;
+	
+}
+
+a:hover, a:focus {
+	color: rgb(24, 24, 105); 
+	
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+
+.nav-main-item {
+
+	display: inline-block;
+	color: white;
+	background-color: rgb(44, 90, 97) ;
+	font-size: 1rem;
+	padding: 1rem 1rem;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	text-align: center;
+}
+
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color:rgb(83, 95, 97);
+}
+
+.indent {
+	margin-left: 2.5rem;
+}
+
+.further_indent{
+	margin-left: 5rem;
+}
+
+.italicize{
+	font-style: italic;
+}
+
+/* The information for gotopbutton from: https://www.youtube.com/watch?v=Vef9bxTilCU*/
+.gotopbtn{
+	position: fixed;
+	width:  2.813rem;
+	height: 2.813rem;
+	color: white;
+	background-color: #93A8AB;;
+	bottom: 2.5rem;
+	right: 3.125rem;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 0.625rem;
+  }
+  
+  footer {
+	margin-top: 3.125rem;
+	background-color: #2C5A61;
+	padding-top: 6.25rem;
+  }
+  
+@media (min-width: 20rem){
+	
+	h1{
+		margin-top: 0rem;
+		padding-top: 5rem;
+    }
+
+   
+}
+
+@media (min-width: 48rem){
+
+
+	nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+   h1{
+		margin-top: 0rem;
+		padding-top: 8rem;
+    }
+    
+    
+}
+@media (min-width: 80rem){
+	nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    h1{
+		padding-top: 5rem;
+    }
+    
+    
+}
+

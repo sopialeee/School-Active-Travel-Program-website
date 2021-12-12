@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- This is the content for P4, "travel challenges" page  -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/challenges_grid.css">
+    <link rel="stylesheet" href="css/challenges_main.css">
+    <link rel="stylesheet" href="css/challenges_positioning.css">
+
+    <title>Overcome Travel Challenges</title>
+
+    <!-- Idea for storing all titles & descriptions in a variable
+    https://stackoverflow.com/a/30578719 -->
+    <script src="data.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="grid five-column">
+            
+				<a href="https://webdav.its.sfu.ca/web/siat-students/site/iat235/kaia_chenny_sopia/IAT235_P4/home.html" class="nav-main-item">Home</a>
+				<a href="https://webdav.its.sfu.ca/web/siat-students/site/iat235/kaia_chenny_sopia/IAT235_P4/progam_benifits.html" class="nav-main-item">Program Benefits</a>
+				<a href="https://webdav.its.sfu.ca/web/siat-students/site/iat235/kaia_chenny_sopia/IAT235_P4/action_plan.html" class="nav-main-item">Action Plans & Route Maps</a>
+				<a href="https://webdav.its.sfu.ca/web/siat-students/site/iat235/kaia_chenny_sopia/IAT235_P4/initiatives.html" class="nav-main-item">Initiatives</a>
+				<a href="https://webdav.its.sfu.ca/web/siat-students/site/iat235/kaia_chenny_sopia/IAT235_P4/challenges.html" class="nav-main-item">Overcome Travel Challenges</a>
+                <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        </nav>
+    </header>
+
+    <div class="challenges">
+        <h1>OVERCOME TRAVEL CHALLENGES</h1>
+    </div>
+
+     <h3>See how we improve infrastructure and support activities to encourage active travel.</h3>
+
+    <!-- boxed idea from https://www.thesitewizard.com/css/rectangular-box-border.shtml -->
+    <div class="boxed">
+        <h2 id="title">Barriers</h2>
+
+        <!-- next/previous button from: https://www.w3schools.com/howto/howto_css_next_prev.asp-->
+        <figure>
+            <img src= "img/barriers.jpeg" id="image" alt="Travel Challenges">
+        </figure>
+        <button class="previous" onclick="nextSlide(-1)">&laquo;</button>
+        <button class="next" onclick="nextSlide(1)"> &raquo;</button>
+        <p id="description"></p>
+    </div>
+
+    <script>
+        // inspired by https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp / Got help for the javascript part from a friend Alex
+        let index = 0;
+        const MAX = 18;
+
+        loadSlide(index); // To initially load the page
+
+        function nextSlide(incrementingNumber) { index += incrementingNumber; loadSlide(); }
+
+        function loadSlide() {
+            if (index === MAX) index = 0; // Set index to first image
+            if (index < 0) index = MAX - 1; // Set index to last image
+
+            document.getElementById("image").src = images[index];
+            document.getElementById("title").innerText = data[index].title;
+            document.getElementById("description").innerText = data[index].description;
+        }
+    </script>
+
+    <!--gototopbutton from: https://www.youtube.com/watch?v=Vef9bxTilCU&feature=share -->
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> ↑ </a>
+
+    <footer>
+        <div class="logo"></div>
+    </footer>
+
+
+</body>
+
+</html>
